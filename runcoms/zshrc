@@ -15,6 +15,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zsh_aliases" ]]; then
 	source "${ZDOTDIR:-$HOME}/.zsh_aliases"
 fi
 
+# Default Editors
+export EDITOR=vim
+export VISUAL=vim
+
 # GOPATH
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$(go env GOPATH)/bin
